@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBarContainer } from '../../styles/NavBar.style';
+import { NavBarContainer } from '../../styles/LandingPage.style';
 import Logo from '../../assets/images/logo.svg';
 import Login from '../../assets/images/login.svg';
 
