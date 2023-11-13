@@ -10,7 +10,7 @@ export const foodData = [
     description:
       'It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery.',
     textColor: '#FF922C',
-    circleColor: '#E87F1E',
+    circleColor: '#FFEEDE',
     BtnShadow: '#F4E2D1',
     foodImage: `${FoodItemOne}`,
   },

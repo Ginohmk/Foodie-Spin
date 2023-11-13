@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArrowDown = ({ fill }) => {
+const ArrowDown = ({ fill, func }) => {
   return (
     <svg
       width="80"
@@ -8,6 +8,7 @@ const ArrowDown = ({ fill }) => {
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={func}
     >
       <g filter="url(#filter0_d_5_140)">
         <circle

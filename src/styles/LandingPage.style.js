@@ -8,7 +8,6 @@ export const LandingPageContainer = styled.section`
   position: relative;
   overflow: hidden;
   height: 100%;
-  border: 2px solid green;
   width: 100%;
   padding-bottom: 1.5rem;
 
@@ -86,10 +85,10 @@ export const HeroSectionContainer = styled.section`
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
+      min-height: 80px;
     }
 
     &__food-btn {
-      margin-top: 1.5rem;
       display: block;
       max-width: 163px;
       height: 48px;
@@ -142,11 +141,13 @@ export const HeroSectionContainer = styled.section`
       &__arrow-con {
         align-self: flex-end;
         cursor: pointer;
+
+        margin-bottom: -1.5rem;
       }
 
       &__img-con {
-        width: 11rem;
-        height: 11rem;
+        width: 13rem;
+        height: 13rem;
         img {
           width: 100%;
           height: 100%;

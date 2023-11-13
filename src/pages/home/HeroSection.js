@@ -5,7 +5,20 @@ import ArrowDown from '../../components/ArrowDown';
 import { foodData } from '../../data/HomePageData';
 
 const HeroSection = () => {
-  const [foodId, setFoodId] = useState(1);
+  const [foodId, setFoodId] = useState(0);
+
+  const increamentFoodId = () => {
+    console.log(foodId, ' in food id');
+    if (foodId < foodData.length - 1) {
+      setFoodId((prevState) => prevState + 1);
+    }
+  };
+
+  const decreamentFoodId = () => {
+    if (foodId > 0) {
+      setFoodId((prevState) => prevState - 1);
+    }
+  };
 
   return (
     <HeroSectionContainer colorId={foodId}>
@@ -34,7 +47,10 @@ const HeroSection = () => {
 
         <section className="nav-food-con">
           <div className="nav-food-con__arrow-con">
-            <ArrowDown fill={foodData[`${foodId}`]?.textColor} />
+            <ArrowDown
+              fill={foodData[`${foodId}`]?.textColor}
+              func={decreamentFoodId}
+            />
           </div>
 
           <div className="nav-food-con__img-con">
@@ -42,7 +58,10 @@ const HeroSection = () => {
           </div>
 
           <div className="nav-food-con__arrow-con">
-            <ArrowDown fill={foodData[`${foodId}`]?.textColor} />
+            <ArrowDown
+              fill={foodData[`${foodId}`]?.textColor}
+              func={increamentFoodId}
+            />
           </div>
         </section>
       </section>
