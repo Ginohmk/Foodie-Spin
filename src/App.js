@@ -1,4 +1,5 @@
 import './App.css';
+import TestRun from './TestRun';
 import LandingPage from './pages/home/LandingPage';
 import { AppContainer } from './styles/App.style';
 

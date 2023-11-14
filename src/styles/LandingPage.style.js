@@ -115,12 +115,50 @@ export const HeroSectionContainer = styled.section`
       overflow: hidden;
 
       &__img-con {
-        img {
-          width: 72.5%;
-          height: 18rem;
+        border: 2px dashed red;
+
+        width: 38rem;
+        height: 38rem;
+
+        position: absolute;
+        bottom: -19rem;
+        right: 17.5rem;
+
+        border-radius: 50%;
+
+        &__plate {
+          width: 10rem;
+          height: 10rem;
+        }
+
+        .plate-one {
           position: absolute;
-          bottom: 1rem;
-          right: 9.5rem;
+          bottom: 19.5rem;
+          left: -4rem;
+        }
+
+        .plate-two {
+          position: absolute;
+          bottom: 28.5rem;
+          left: 3rem;
+        }
+
+        .plate-three {
+          position: absolute;
+          bottom: 31.95rem;
+          left: 14rem;
+        }
+
+        .plate-four {
+          position: absolute;
+          bottom: 27.5rem;
+          right: 2.5rem;
+        }
+
+        .plate-five {
+          position: absolute;
+          bottom: 17.5rem;
+          right: -4.5rem;
         }
       }
     }
@@ -128,7 +166,7 @@ export const HeroSectionContainer = styled.section`
     display: flex;
     width: 100%;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: right;
 
     .nav-food-con {
@@ -136,22 +174,89 @@ export const HeroSectionContainer = styled.section`
       position: relative;
       display: flex;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 1.5rem;
 
       &__arrow-con {
         align-self: flex-end;
         cursor: pointer;
 
-        margin-bottom: -1.5rem;
+        margin-bottom: -2rem;
       }
 
       &__img-con {
-        width: 13rem;
-        height: 13rem;
+        width: 15.5rem;
+        height: 15.5rem;
+
+        margin-right: -5.2rem;
+
         img {
+          margin-top: 3rem;
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+
+  /* ======
+  --- ANIMATIONS ---
+  =========== */
+
+  /* landing food detail */
+  .scale-down {
+    animation: in 1.2s ease-in-out;
+
+    @keyframes in {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(0);
+      }
+    }
+  }
+
+  .scale-up {
+    animation: out 1.2s ease-in-out;
+
+    @keyframes out {
+      from {
+        transform: scale(0);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+
+  /* Image Item Animation */
+
+  .rotate-right {
+    animation: roll-right 1.2s ease-in-out;
+
+    @keyframes roll-right {
+      from {
+        transform: scale(0.5) rotate(360deg);
+      }
+
+      to {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+  }
+
+  .rotate-left {
+    animation: roll-left 1.2s ease-in-out;
+
+    @keyframes roll-left {
+      from {
+        transform: scale(0.5) rotate(-360deg);
+      }
+
+      to {
+        transform: scale(1) rotate(0deg);
       }
     }
   }
