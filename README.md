@@ -1,4 +1,4 @@
-# Portfolio Version 2
+# Food Spin
 
 This a landing page showcasing Foodie spin and to get user engagement through a clean design and animation fell.
 
